@@ -1,0 +1,256 @@
+body {
+    overflow-x: hidden;
+}
+.cv{
+    padding-top: 100px;
+}
+
+.clear{
+    --mainColor :#00c00a;
+    --borderColor:rgba(0, 0, 0, 0);
+    --textColor:black;
+    --btnNav:white;
+    --bgBoxInfo :#000000d8;
+    --navv:ghostwhite;
+    --bbbb :white;
+    transition: .5s ;
+    min-height: 100vh;
+}
+.sombre{
+    --btnNav:#000000d8;
+    --bgBoxInfo :#000000d8;
+    --mainColor :#00c00a;
+    --borderColor:#ffffff4d;
+    --textColor:white;
+    --navv:#191919;
+    --bbbb :rgba(0, 0, 0, 0.832);
+    background-color: rgba(0, 0, 0, 0.832);
+    transition: .5s;
+    min-height: 100vh;
+}
+
+.txt{
+    transition: .4s;
+    color: var(--textColor);
+}
+
+header{
+    position: fixed;
+    top :0;
+    left: 0;
+    z-index: 6;
+    background:linear-gradient(to bottom,var(--btnNav),rgba(255, 255, 255, 0)) ;
+}
+
+header span{
+    color: var(--mainColor);
+}
+
+nav,section,main{
+    border-radius: 5px;
+    border: 1px solid var(--borderColor);
+    box-shadow:0px 0px 4px 0px black;
+}
+
+nav{
+    height:100px;
+}
+
+main{
+    min-height:calc(100vh - 400px);
+}
+
+.imageProfile{
+    width: 100%;
+    height: 250px;
+}
+.imageProfile img{
+    border-radius: 100%;
+    border: 5px solid var(--mainColor);
+    cursor: pointer;
+    transition: .2s;
+}
+
+.Section_2{
+    display: none;
+}
+
+@media screen and (max-width: 765px) {
+    .Section_1{
+        display: none;
+    }
+
+    .Section_2{
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 700px){
+    .Navigator{
+        display: none;
+    }
+    .buttonNavigator{
+        display: flex;
+    }
+    .navbarrrr{
+        display: flex;
+    }
+    
+}
+
+@media screen and (min-width: 700px){
+    .buttonNavigator,.navbarrrr{
+        display: none;
+    }
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    color: var(--textColor);
+}
+
+.infor td{
+    background-color:rgba(128, 128, 128, 0.096);
+    text-align: left;
+    padding: 5px 0;
+}
+
+nav ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left:3px ;
+    margin-right:3px ;
+    height: 90%;
+    padding: 10px 10px;
+    border-radius: 5px;
+    background-color:rgba(128, 128, 128, 0.096);
+    width: 100%;
+}
+
+nav ul li:hover,nav ul li:hover a{
+    background-color: var(--mainColor);
+    color :white;
+}
+
+nav ul {
+    margin-left: -30px;
+}
+
+.ifif{
+    width: 80vw;
+    height: 80vw;
+    max-width: 600px;
+    max-height: 600px;
+    margin: 0 100px;
+    border-radius: 10000000px;
+    border: 5px solid var(--mainColor);
+}
+
+.dwnCV{
+    background-color: var(--mainColor);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    color: white;
+    border: 2px solid var(--mainColor);
+    transition: .3s;
+}
+
+.dwnCV:hover{
+    background-color: var(--bbbb);
+    color: var(--textColor);
+    transition: .3s;
+}
+
+.buttonNavigator{
+    width: 50px;
+    height: 50px;
+    border: 3px solid var(--mainColor);
+    padding: auto;
+    border-radius:5px ;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.buttonNavigator div{
+    width: 30px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: var(--mainColor);
+    margin: 4px 0;
+    transition: .3s;
+    transform: translate();
+}
+
+.line_1{
+    transform: rotate(32deg) translate(4px,3px);
+}
+.line_3{
+    transform: rotate(-32deg)  translate(4px,-3px);
+}
+
+.line_2{
+    transform: rotate(90deg) translateY(10px);
+}
+
+.buttonNavigator:hover{
+    background-color: var(--mainColor) ;
+    border: 3px solid var(--btnNav);
+    box-shadow: 0px 0px 0px 2px var(--mainColor) ;
+    transition: .5s;
+}
+
+.buttonNavigator:hover div{
+    transition: .5s;
+    background-color: var(--btnNav);
+}
+
+
+.navbarrrr{
+    height: 100vh;
+    width: 130px;
+    background-color: var(--navv);
+    position: fixed;
+    top:0;
+    z-index:1 ;
+    transition: .5s;
+}
+
+.infor{
+    list-style-type: none;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.Hometitle{
+    color: var(--mainColor);
+}
+
+.formulaire{
+    min-width: 100%;
+}
+
+.input-1{
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: 1px solid var(--mainColor);
+    background-color: rgba(128, 128, 128, 0.096);
+}
+
+.WhateIDo div div div{
+    background-color:rgba(128, 128, 128, 0.096);
+}
+
+/* line_1 */
